@@ -76,7 +76,7 @@ gulp.task('server', function () {
             .pipe(jshint())
             .pipe(jshint.reporter(jshintStylish));
     });
-    gulp.watch('dist/**/*.css').on('change', function (event) {
+    gulp.watch('src/**/*.css').on('change', function (event) {
         gulp.src(event.path)
             .pipe(csslint())
             .pipe(csslint.reporter());
