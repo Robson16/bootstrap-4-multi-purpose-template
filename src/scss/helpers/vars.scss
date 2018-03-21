@@ -1,9 +1,10 @@
 //Variareis
-$cor-padrao: #c24e4b;
-$cor-axiliar: #1e2c35;
-$cor-branca: #fff;
-$cor-preta: #000;
-
+$cor-padrao: rgb(194, 78, 75);
+$cor-padrao-transp: rgba($color: $cor-padrao, $alpha: 0.5);
+$cor-axiliar: rgb(17, 16, 26);
+$cor-axiliar-transp: rgba($color: $cor-axiliar, $alpha: 0.5);
+$cor-branca: rgb(255, 255, 255);
+$cor-preta: rgb(0, 0, 0);
 @font-face {
     font-family: 'Catamaran';
     src: url('../fonts/catamaran-regular.eot');
