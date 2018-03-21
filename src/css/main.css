@@ -4,12 +4,14 @@
   src: url("../fonts/catamaran-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/catamaran-regular.woff2") format("woff2"), url("../fonts/catamaran-regular.woff") format("woff"), url("../fonts/catamaran-regular.ttf") format("truetype"), url("../fonts/catamaran-regular.svg#catamaranregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'Open Sans';
   src: url("../fonts/opensans-regular.eot");
   src: url("../fonts/opensans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff"), url("../fonts/opensans-regular.ttf") format("truetype"), url("../fonts/opensans-regular.svg#open_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 h1,
 h2,
 h3,
@@ -23,17 +25,20 @@ body {
   font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 300; }
 
-.cover {
+.cover, .news {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-.cover .cover-inner .btn-primary {
+.cover-inner .btn-primary {
   box-shadow: 0 3px 9px 0 rgba(41, 41, 51, 0.25); }
 
-.cover .cover-inner h1, .cover .cover-inner p {
+.cover-inner .cover-title, .cover-inner .cover-text {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); }
+
+.cover-inner .cover-title, .cover-inner .btn {
+  margin: .8em 0; }
 
 body,
 html {
@@ -61,35 +66,36 @@ h6 {
 .navbar-trans {
   background-color: transparent; }
 
-.cover {
+.cover, .news {
   background-image: url("../img/cup-of-coffee.jpg");
   background-position: center;
   min-height: 48rem;
   height: auto;
   border-radius: 0;
-  color: #fff;
+  color: white;
   padding-top: 1rem; }
-  .cover .cover-container {
-    height: 100%;
-    min-height: 40rem;
-    margin: 0 auto; }
-  .cover .cover-inner h1 {
-    margin: .8em 0;
+
+.cover-container {
+  height: 100%;
+  min-height: 40rem; }
+
+.cover-inner {
+  margin-bottom: 3.5em; }
+  .cover-inner .cover-title {
     font-size: 3.5em;
     font-weight: 700; }
-  .cover .cover-inner p {
+  .cover-inner .cover-text {
     margin-bottom: .8em;
     font-size: 1.5em;
     font-weight: 300;
     line-height: 1.4167; }
-  .cover .cover-inner .logo {
+  .cover-inner .logo {
     max-width: 25%; }
-  .cover .cover-inner .btn {
-    margin: .8em 0;
+  .cover-inner .btn {
     box-sizing: border-box;
     text-transform: uppercase;
-    color: #fff; }
-  .cover .cover-inner .btn-primary {
+    color: white; }
+  .cover-inner .btn-primary {
     padding: .5em 2em;
     border-color: transparent;
     border-radius: 0.15em;
@@ -97,19 +103,23 @@ h6 {
     font-size: 1.2em;
     font-weight: bold;
     line-height: 3em; }
-    .cover .cover-inner .btn-primary:hover {
+    .cover-inner .btn-primary:hover {
       background-color: #a33a37; }
-  .cover .cover-inner .btn-secondary {
+  .cover-inner .btn-secondary {
     margin-top: 1.5em;
     padding: .5em 1.2em;
-    border-color: #fff;
+    border-color: white;
     border-radius: 0.1em;
     background-color: transparent;
     font-size: 1em;
     line-height: 2.6em; }
-    .cover .cover-inner .btn-secondary:hover {
+    .cover-inner .btn-secondary:hover {
       opacity: 0.7;
-      color: #000;
-      background-color: #fff; }
+      color: black;
+      background-color: white; }
+  .cover-inner .cover-link {
+    text-decoration: underline;
+    color: white; }
 
-/*# sourceMappingURL=main.css.map */
+.news {
+  background: url("../img/patterns/zwartevilt.png") repeat; }
