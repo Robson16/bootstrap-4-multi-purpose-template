@@ -1,4 +1,34 @@
 .news {
     @extend .cover;
     background: url('../img/patterns/zwartevilt.png') repeat;
+    min-height: 38rem;
+}
+
+.news-container {
+    @extend .cover-container;
+    min-height: 30rem;
+}
+
+.news-inner {
+    margin: 3em 50% 3em 0;
+    .news-title {
+        @extend .cover-title;
+        text-align: left;
+    }
+    .news-text {
+        @extend .cover-text;
+    }
+    .btn-news-primary {
+        @extend .btn-cover-secondary;
+    }
+    @media (max-width: 1024px) {
+        margin-right: 0;
+        .news-title,
+        .news-text {
+            text-align: center;
+        }
+        .btn-news-primary{
+            margin: 0 auto;
+        }
+    }
 }
