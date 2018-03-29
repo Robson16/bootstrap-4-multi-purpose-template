@@ -1,7 +1,12 @@
 .news {
-    @extend .cover;
-    background: url('../img/patterns/zwartevilt.png') repeat;
+    background-image: url("../img/smartphones.png"), url('../img/patterns/zwartevilt.png');
+    background-repeat: no-repeat, repeat;
+    background-position: right top, top left;
+    padding-top: 1rem;
     min-height: 38rem;
+    height: auto;
+    color: $cor-branca;
+    @extend %text-shadow;
 }
 
 .news-container {
@@ -27,7 +32,7 @@
         .news-text {
             text-align: center;
         }
-        .btn-news-primary{
+        .btn-news-primary {
             margin: 0 auto;
         }
     }

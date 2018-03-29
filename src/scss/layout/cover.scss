@@ -1,5 +1,5 @@
 .cover {
-    background-image: url('../img/cup-of-coffee.jpg');
+    background-image: linear-gradient($cor-axiliar-transp, $cor-axiliar-transp), url('../img/bg-cover.jpg');
     background-position: center;
     @extend %background-cover;
     min-height: 48rem;

@@ -25,7 +25,7 @@ body {
   font-family: 'Open Sans', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 300; }
 
-.cover, .news {
+.cover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,7 +34,7 @@ body {
 .btn-cover-primary {
   box-shadow: 0 3px 9px 0 rgba(41, 41, 51, 0.25); }
 
-.cover-title, .news-inner .news-title, .cover-text, .news-inner .news-text {
+.cover-title, .news-inner .news-title, .cover-text, .news-inner .news-text, .news {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5); }
 
 .cover-title, .news-inner .news-title, .btn {
@@ -60,14 +60,14 @@ h6 {
   display: none; }
 
 .color-primary {
-  color: #c24e4b;
+  color: #1a83e6;
   font-weight: bold; }
 
 .navbar-trans {
   background-color: transparent; }
 
-.cover, .news {
-  background-image: url("../img/cup-of-coffee.jpg");
+.cover {
+  background-image: linear-gradient(rgba(17, 16, 26, 0.5), rgba(17, 16, 26, 0.5)), url("../img/bg-cover.jpg");
   background-position: center;
   min-height: 48rem;
   height: auto;
@@ -101,13 +101,13 @@ h6 {
   padding: .5em 2em;
   border-color: transparent;
   border-radius: 0.15em;
-  background-color: #c24e4b;
+  background-color: #1a83e6;
   font-size: 1.2em;
   font-weight: bold;
   line-height: 3em; }
   .btn-cover-primary:hover {
     color: white;
-    background-color: #a33a37; }
+    background-color: #1469b9; }
 
 .btn-cover-secondary, .news-inner .btn-news-primary {
   margin-top: 1.5em;
@@ -129,8 +129,13 @@ h6 {
     color: white; }
 
 .news {
-  background: url("../img/patterns/zwartevilt.png") repeat;
-  min-height: 38rem; }
+  background-image: url("../img/smartphones.png"), url("../img/patterns/zwartevilt.png");
+  background-repeat: no-repeat, repeat;
+  background-position: right top, top left;
+  padding-top: 1rem;
+  min-height: 38rem;
+  height: auto;
+  color: white; }
 
 .news-container {
   min-height: 30rem; }
