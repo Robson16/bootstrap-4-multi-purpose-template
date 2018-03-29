@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap-4-multi-purpose-template",
-  "description": "template multi purpose",
+  "name": "bootstrap-services-store-template",
+  "description": "bootstrap services-store template",
   "main": "index.html",
   "authors": [
     "Robson H Rodrigues <robsonhrodrigues.com.br>"
@@ -9,7 +9,7 @@
   "keywords": [
     "bootstrap-4"
   ],
-  "homepage": "https://github.com/Robson16/bootstrap-4-multi-purpose-template",
+  "homepage": "https://github.com/Robson16/bootstrap-services-store-template",
   "private": true,
   "ignore": [
     "**/.*",

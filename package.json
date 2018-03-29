@@ -1,14 +1,14 @@
 {
-  "name": "bootstrap-4-multi-purpose-template",
+  "name": "bootstrap-services-store-template",
   "version": "1.0.0",
-  "description": "template multi purpose",
+  "description": "bootstrap services-store template",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Robson16/bootstrap-4-multi-purpose-template.git"
+    "url": "git+https://github.com/Robson16/bootstrap-services-store-template.git"
   },
   "keywords": [
     "bootstrap-4"
@@ -16,9 +16,9 @@
   "author": "Robson H Rodrigues <robsonhrodrigues.com.br>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Robson16/bootstrap-4-multi-purpose-template/issues"
+    "url": "https://github.com/Robson16/bootstrap-services-store-template/issues"
   },
-  "homepage": "https://github.com/Robson16/bootstrap-4-multi-purpose-template#readme",
+  "homepage": "https://github.com/Robson16/bootstrap-services-store-template#readme",
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
