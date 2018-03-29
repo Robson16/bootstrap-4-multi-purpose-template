@@ -1,2 +1,2 @@
-# bootstrap-4-multi-purpose-template
-Bootstrap 4 multi purpose template
+# bootstrap-services-store-template
+Bootstrap Services Strore template
