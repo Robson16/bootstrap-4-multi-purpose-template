@@ -1,2 +1,2 @@
-# bootstrap-services-store-template
-Bootstrap Services Strore template
+# bootstrap-landing-page-template
+Bootstrap Landing Page Template
