@@ -1,0 +1,12 @@
+// Mixins
+
+=translateY($porcentagem)
+    -webkit-transform: translateY($porcentagem)
+    -moz-transform: translateY($porcentagem)
+    -ms-transform: translateY($porcentagem)
+    -o-transform: translateY($porcentagem)
+    transform: translateY($porcentagem)
+
+// Background image with layer of color on it
+=tintedImage($color, $alpha, $imgUrl)
+    background-image: linear-gradient(rgba($color, $alpha), rgba($color, $alpha)), url($imgUrl)
