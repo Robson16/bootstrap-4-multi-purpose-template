@@ -36,6 +36,11 @@ gulp.task('copy', ['clean'], function () {
         './bower_components/jquery/dist/jquery.min.js'
     ]).pipe(gulp.dest('./src/vendor/jquery'));
 
+    // SmoothScroll.js
+    gulp.src([
+        './bower_components/smoothscroll-for-websites/SmoothScroll.js'
+    ]).pipe(gulp.dest('./src/vendor/smoothscroll'));
+
     return gulp.src('src/**/*').pipe(gulp.dest('dist'));
 });
 
@@ -79,7 +84,7 @@ gulp.task('server', function () {
             baseDir: 'src'
         }
     });
-    gulp.watch('src/scss/*.scss').on('change', function (event) {
+    gulp.watch('src/sass/*.sass').on('change', function (event) {
         console.log('Compilando arquivo: ' + event.path);
         gulp.src(event.path)
             .pipe(sass().on('error', sass.logError))

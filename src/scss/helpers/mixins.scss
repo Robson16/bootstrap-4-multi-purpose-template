@@ -1,8 +1,0 @@
-//Mixins
-@mixin translateY($porcentagem) {
-    -webkit-transform: translateY($porcentagem);
-    -moz-transform: translateY($porcentagem);
-    -ms-transform: translateY($porcentagem);
-    -o-transform: translateY($porcentagem);
-    transform: translateY($porcentagem);
-}

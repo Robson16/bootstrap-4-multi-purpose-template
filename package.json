@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Robson16/bootstrap-services-store-template.git"
+    "url": "git+https://github.com/Robson16/bootstrap-landing-page-template.git"
   },
   "keywords": [
     "bootstrap-4"
@@ -16,9 +16,9 @@
   "author": "Robson H Rodrigues <robsonhrodrigues.com.br>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Robson16/bootstrap-services-store-template/issues"
+    "url": "https://github.com/Robson16/bootstrap-landing-page-template/issues"
   },
-  "homepage": "https://github.com/Robson16/bootstrap-services-store-template#readme",
+  "homepage": "https://github.com/Robson16/bootstrap-landing-page-template#readme",
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",

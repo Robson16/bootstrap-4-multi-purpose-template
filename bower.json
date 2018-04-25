@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-services-store-template",
+  "name": "bootstrap-landing-page-template",
   "description": "bootstrap services-store template",
   "main": "index.html",
   "authors": [
@@ -9,7 +9,7 @@
   "keywords": [
     "bootstrap-4"
   ],
-  "homepage": "https://github.com/Robson16/bootstrap-services-store-template",
+  "homepage": "https://github.com/Robson16/bootstrap-landing-page-template",
   "private": true,
   "ignore": [
     "**/.*",
@@ -21,6 +21,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
-    "font-awesome": "~4.7"
+    "font-awesome": "~4.7",
+    "smoothscroll-for-websites": "^1.4.6"
   }
 }
