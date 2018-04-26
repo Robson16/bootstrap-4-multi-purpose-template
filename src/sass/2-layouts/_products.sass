@@ -1,0 +1,28 @@
+.products
+    background-color: $cor-cinza
+    padding-top: 1rem
+    min-height: 38rem
+    height: auto
+
+.products-container
+    @extend .cover-container
+
+    .products-inner
+        @extend .cover-inner
+
+        .products-title
+            @extend .cover-title
+
+            margin: 1em 0
+            color: $cor-padrao
+
+        .card
+            @extend %box-shadow
+            .card-body
+                .card-text
+                    min-height: 192px
+
+                .btn-primary
+                    @extend .btn-cover-primary
+                    font-size: 1em
+                    line-height: 1.2em

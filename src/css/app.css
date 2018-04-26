@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Oswald", "Helvetica", "Arial", "sans-serif";
+  font-family: "Catamaran", "Helvetica", "Arial", "sans-serif";
   font-weight: 400; }
 
 body {
@@ -31,13 +31,13 @@ body {
   -o-background-size: cover;
   background-size: cover; }
 
-.btn-cover-primary {
+.btn-cover-primary, .products-container .products-inner .card .card-body .btn-primary, .products-container .products-inner .card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
-.cover-title, .news-inner .news-title, .cover-text, .news-inner .news-text, .news {
+.cover-title, .news-inner .news-title, .products-container .products-inner .products-title, .cover-text, .news-inner .news-text, .news {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
 
-.cover-title, .news-inner .news-title, .btn {
+.cover-title, .news-inner .news-title, .products-container .products-inner .products-title, .btn {
   margin: 1.5em 0; }
 
 /* BASE STYLES */
@@ -77,14 +77,14 @@ h6 {
   color: white;
   padding-top: 1rem; }
 
-.cover-container, .news-container {
+.cover-container, .news-container, .products-container {
   height: 100%;
   min-height: 40rem; }
 
-.cover-inner {
+.cover-inner, .products-container .products-inner {
   margin-bottom: 3.5em; }
 
-.cover-title, .news-inner .news-title {
+.cover-title, .news-inner .news-title, .products-container .products-inner .products-title {
   font-size: 3.5em;
   font-weight: 700; }
 
@@ -99,7 +99,7 @@ h6 {
   text-transform: uppercase;
   color: white; }
 
-.btn-cover-primary {
+.btn-cover-primary, .products-container .products-inner .card .card-body .btn-primary {
   padding: 0.5em 2em;
   border-color: transparent;
   border-radius: 0.15em;
@@ -107,7 +107,7 @@ h6 {
   font-size: 1.2em;
   font-weight: bold;
   line-height: 3em; }
-  .btn-cover-primary:hover {
+  .btn-cover-primary:hover, .products-container .products-inner .card .card-body .btn-primary:hover {
     color: white;
     background-color: #1469b9; }
 
@@ -154,6 +154,23 @@ h6 {
         text-align: center; }
       .news-inner .btn-news-primary {
         margin: 0 auto; } }
+
+.products {
+  background-color: #f4f4f4;
+  padding-top: 1rem;
+  min-height: 38rem;
+  height: auto; }
+
+.products-container .products-inner .products-title {
+  margin: 1em 0;
+  color: #1a83e6; }
+
+.products-container .products-inner .card .card-body .card-text {
+  min-height: 192px; }
+
+.products-container .products-inner .card .card-body .btn-primary {
+  font-size: 1em;
+  line-height: 1.2em; }
 
 footer {
   width: 100%;
