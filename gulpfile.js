@@ -36,7 +36,7 @@ gulp.task('copy', ['clean'], function () {
         './bower_components/jquery/dist/jquery.min.js'
     ]).pipe(gulp.dest('./src/vendor/jquery'));
 
-    // SmoothScroll.js
+    // SmoothScroll JS
     gulp.src([
         './bower_components/smoothscroll-for-websites/SmoothScroll.js'
     ]).pipe(gulp.dest('./src/vendor/smoothscroll'));
