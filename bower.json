@@ -22,6 +22,7 @@
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
     "font-awesome": "~4.7",
-    "smoothscroll-for-websites": "^1.4.6"
+    "smoothscroll-for-websites": "^1.4.6",
+    "parallax.js": "^1.5.0"
   }
 }

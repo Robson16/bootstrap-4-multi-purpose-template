@@ -172,6 +172,11 @@ h6 {
   font-size: 1em;
   line-height: 1.2em; }
 
+.countup {
+  min-height: 400px;
+  background: transparent;
+  color: white; }
+
 footer {
   width: 100%;
   height: 300px; }

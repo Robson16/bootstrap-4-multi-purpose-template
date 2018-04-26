@@ -41,6 +41,11 @@ gulp.task('copy', ['clean'], function () {
         './bower_components/smoothscroll-for-websites/SmoothScroll.js'
     ]).pipe(gulp.dest('./src/vendor/smoothscroll'));
 
+    // Parallax JS
+    gulp.src([
+        './bower_components/parallax.js/parallax.min.js'
+    ]).pipe(gulp.dest('./src/vendor/parallax'));
+
     return gulp.src('src/**/*').pipe(gulp.dest('dist'));
 });
 
