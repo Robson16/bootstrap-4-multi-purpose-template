@@ -41,10 +41,20 @@ gulp.task('copy', ['clean'], function () {
         './bower_components/smoothscroll-for-websites/SmoothScroll.js'
     ]).pipe(gulp.dest('./src/vendor/smoothscroll'));
 
-    // Parallax JS
+    // Waypoints JS
     gulp.src([
-        './bower_components/parallax.js/parallax.min.js'
-    ]).pipe(gulp.dest('./src/vendor/parallax'));
+        './bower_components/waypoints/lib/jquery.waypoints.min.js'
+    ]).pipe(gulp.dest('./src/vendor/waypoints'));
+
+    // Counter-Up JS
+    gulp.src([
+        './bower_components/Counter-Up/jquery.counterup.min.js'
+    ]).pipe(gulp.dest('./src/vendor/counter-up'));
+
+    // SmoothScroll JS
+    gulp.src([
+        './bower_components/smoothscroll-for-websites/SmoothScroll.js'
+    ]).pipe(gulp.dest('./src/vendor/smoothscroll'));
 
     return gulp.src('src/**/*').pipe(gulp.dest('dist'));
 });

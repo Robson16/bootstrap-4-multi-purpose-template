@@ -31,14 +31,17 @@ body {
   -o-background-size: cover;
   background-size: cover; }
 
-.btn-cover-primary, .products-container .products-inner .card .card-body .btn-primary, .products-container .products-inner .card {
+.btn-cover-primary, .card .card-body .btn-primary, .card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
-.cover-title, .news-inner .news-title, .products-container .products-inner .products-title, .cover-text, .news-inner .news-text, .news {
+.cover-title, .news-inner .news-title, .products-container .products-inner .products-title, .countup-inner .countup-title, .cover-text, .news-inner .news-text, .countup-inner .countup-text, .news, .countup {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
 
-.cover-title, .news-inner .news-title, .products-container .products-inner .products-title, .btn {
+.cover-title, .news-inner .news-title, .products-container .products-inner .products-title, .countup-inner .countup-title, .btn {
   margin: 1.5em 0; }
+
+.countup-inner .item .item-icon {
+  padding: 1.5em 0; }
 
 /* BASE STYLES */
 body,
@@ -61,7 +64,7 @@ h6 {
   display: none; }
 
 .color-primary {
-  color: #1a83e6;
+  color: #1e7aea;
   font-weight: bold; }
 
 /* LAYOUTS */
@@ -69,9 +72,9 @@ h6 {
   background-color: transparent; }
 
 .cover {
-  background-image: linear-gradient(rgba(17, 16, 26, 0.3), rgba(17, 16, 26, 0.3)), url("../img/bg-cover.jpg");
+  background-image: linear-gradient(rgba(30, 122, 234, 0.1), rgba(30, 122, 234, 0.1)), url("../img/bg-cover.jpg");
   background-position: center;
-  min-height: 48rem;
+  min-height: 100vmin;
   height: auto;
   border-radius: 0;
   color: white;
@@ -81,14 +84,14 @@ h6 {
   height: 100%;
   min-height: 40rem; }
 
-.cover-inner, .products-container .products-inner {
+.cover-inner, .products-container .products-inner, .countup-inner {
   margin-bottom: 3.5em; }
 
-.cover-title, .news-inner .news-title, .products-container .products-inner .products-title {
+.cover-title, .news-inner .news-title, .products-container .products-inner .products-title, .countup-inner .countup-title {
   font-size: 3.5em;
   font-weight: 700; }
 
-.cover-text, .news-inner .news-text {
+.cover-text, .news-inner .news-text, .countup-inner .countup-text {
   margin-bottom: 0.8em;
   font-size: 1.5em;
   font-weight: 300;
@@ -99,17 +102,17 @@ h6 {
   text-transform: uppercase;
   color: white; }
 
-.btn-cover-primary, .products-container .products-inner .card .card-body .btn-primary {
+.btn-cover-primary, .card .card-body .btn-primary {
   padding: 0.5em 2em;
   border-color: transparent;
   border-radius: 0.15em;
-  background-color: #1a83e6;
+  background-color: #1e7aea;
   font-size: 1.2em;
   font-weight: bold;
   line-height: 3em; }
-  .btn-cover-primary:hover, .products-container .products-inner .card .card-body .btn-primary:hover {
+  .btn-cover-primary:hover, .card .card-body .btn-primary:hover {
     color: white;
-    background-color: #1469b9; }
+    background-color: #1262c3; }
 
 .btn-cover-secondary, .news-inner .btn-news-primary {
   margin-top: 1.5em;
@@ -163,21 +166,38 @@ h6 {
 
 .products-container .products-inner .products-title {
   margin: 1em 0;
-  color: #1a83e6; }
+  color: #1e7aea; }
 
-.products-container .products-inner .card .card-body .card-text {
+.card .card-body .card-text {
   min-height: 146px; }
 
-.products-container .products-inner .card .card-body .btn-primary {
+.card .card-body .btn-primary {
   font-size: 1em;
   line-height: 1.2em; }
 
 .countup {
-  min-height: 400px;
-  background: transparent;
+  background: rgba(30, 122, 234, 0.2);
+  min-height: 500px;
+  height: auto;
   color: white; }
 
+.countup-container {
+  height: 100%;
+  min-height: 50vmin; }
+
+.countup-inner .countup-title {
+  margin: 0 auto;
+  padding: 0.5em 0; }
+
+.countup-inner .item {
+  padding: 1em auto; }
+  .countup-inner .item .item-icon {
+    font-size: 1.5em; }
+  .countup-inner .item .counter {
+    font-size: 2em; }
+
 footer {
+  background: url("../img/patterns/zwartevilt.png") repeat;
   width: 100%;
   height: 300px; }
 
