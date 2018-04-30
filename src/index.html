@@ -82,7 +82,7 @@
     </header>
 
     <main>
-        <section class="news">
+        <section class="news" data-parallax="scroll" data-image-src="./img/bg-cover.jpg">
             <div class="news-container container">
                 <div class="news-inner">
                     <div class="row">
@@ -103,13 +103,13 @@
 
         <section class="products">
             <div class="products-container container">
-                <div class="products-inner">
+                <div class="products-inner text-center">
                     <h2 class="products-title display-4">Lorem ipsum</h2>
                     <div class="row">                        
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
                                 <img class="card-img-top" src="img/cyber-security-2765707_640.jpg" alt="Card image cap">
-                                <div class="card-body text-center">
+                                <div class="card-body">
                                     <h5 class="card-title">Lorem ipsum</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil veritatis unde laudantium consectetur, deserunt in! Vero, minima? Explicabo beatae placeat numquam.</p>
                                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -122,7 +122,7 @@
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
                                 <img class="card-img-top" src="img/mobile-phone-1230984_640.jpg" alt="Card image cap">
-                                <div class="card-body text-center">
+                                <div class="card-body">
                                     <h5 class="card-title">Lorem ipsum</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil veritatis unde laudantium consectetur, deserunt in! Vero, minima? Explicabo beatae placeat numquam, repudiandae eaque porro quo ad reiciendis. Eos, maxime facere?</p>
                                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -135,7 +135,7 @@
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
                                 <img class="card-img-top" src="img/stethoscope-2617700_640.jpg" alt="Card image cap">
-                                <div class="card-body text-center">
+                                <div class="card-body">
                                     <h5 class="card-title">Lorem ipsum</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil veritatis unde laudantium consectetur, deserunt in! Vero, minima?</p>
                                     <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -153,20 +153,49 @@
             <!-- /.products-container -->
         </section>
 
-        <section class="countup" data-parallax="scroll" data-image-src="./img/people-using-smartphones.jpg">
+        <section class="countup" data-parallax="scroll" data-image-src="./img/people-using-smartphones.jpg"> 
             <div class="countup-container container">
-                <div class="countup-inner">
-                    <h2>Lorem ipsum</h2>
+                <div class="countup-inner text-center">
+                    <h2 class="countup-title">Lorem ipsum</h2>
+                    <p class="countup-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eaque quibusdam quas, ut perferendis delectus ratione!</p>
                     <div class="row">
-                        <div class="col-12">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reprehenderit odio non nemo unde libero delectus quidem, eveniet
-                                totam perspiciatis. Eum rerum provident ducimus itaque aspernatur odit quibusdam dicta obcaecati.
-                            </p>
+                        <div class="col-sm-4">
+                            <div class="item">
+                                <div class="item-icon">
+                                    <i class="fa fa-flag fa-3x"></i>
+                                </div>
+                                <h3 class="item-text">                                    
+                                    <p>Lorem ipsum<br><span class="counter">36.240</span><br> dolor sit</p>                                    
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="item">
+                                <div class="item-icon">
+                                    <i class="fa fa-calendar-o fa-3x"></i>
+                                </div>
+                                <h3 class="item-text">                                    
+                                    <p>Lorem ipsum<br><span class="counter">6.240</span><br> dolor sit</p>
+                                </h3>                                 
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="item">
+                                <div class="item-icon">
+                                    <i class="fa fa-clock-o fa-3x"></i>
+                                </div>
+                                <h3 class="item-text">                                    
+                                    <p>Lorem ipsum<br><span class="counter">14</span><br> dolor sit</p>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section style="height: 500px">
+
         </section>
     </main>
 
@@ -183,6 +212,12 @@
     <!-- Parallax JS -->
     <script src="vendor/parallax/parallax.min.js"></script>
 
+    <!-- Waypoints JS -->
+    <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+
+    <!-- Counter-Up JS -->
+    <script src="vendor/counter-up/jquery.counterup.min.js"></script>
+
     <!-- SmoothScroll JS -->    
     <!-- build:js vendor/smoothscroll/smoothscroll.min.js -->
     <script src="vendor/smoothscroll/SmoothScroll.js"></script>
@@ -190,6 +225,7 @@
 
     <!-- Inline Java-Scripts -->
     <script inline src="js/smoothscroll-config.js"></script>
+    <script inline src="js/counterup-config.js"></script>
 </body>
 
 </html>
