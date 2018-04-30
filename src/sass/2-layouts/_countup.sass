@@ -1,33 +1,22 @@
 .countup
     background: rgba($cor-padrao, 0.2)
+    padding-top: 1px
     min-height: 500px
     height: auto
     color: $cor-branca
 
     @extend %text-shadow
 
-.countup-container
+.container
     height: 100%
     min-height: 50vmin
 
-.countup-inner
-    @extend .cover-inner
+.item
+    padding: 1em auto
 
-    .countup-title
-        @extend .cover-title
+    .item-icon
+        @extend %padding-default
+        font-size: 1.5em
 
-        margin: 0 auto
-        padding: 0.5em 0
-
-    .countup-text
-        @extend .cover-text
-
-    .item
-        padding: 1em auto
-
-        .item-icon
-            @extend %padding-default
-            font-size: 1.5em
-
-        .counter
-            font-size: 2em
+    .counter
+        font-size: 2em
