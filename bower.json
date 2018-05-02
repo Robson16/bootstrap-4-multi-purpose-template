@@ -25,6 +25,7 @@
     "smoothscroll-for-websites": "^1.4.6",
     "parallax.js": "^1.5.0",
     "waypoints": "^4.0.1",
-    "Counter-Up": "https://github.com/bfintal/Counter-Up.git#^1.0.0"
+    "Counter-Up": "https://github.com/bfintal/Counter-Up.git#^1.0.0",
+    "ekko-lightbox": "^5.3.0"
   }
 }

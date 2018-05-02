@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap Landing Page Template</title>
-
+    <!-- Bootstrap 4 Core CSS --> 
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome 4 CSS --> 
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Ekko-Lightbox CSS -->    
+    <!-- build:css vendor/ekko-lightbox/ekko-lightbox.min.css -->
+    <link rel="stylesheet" href="vendor/ekko-lightbox/ekko-lightbox.css">
+    <!-- endbuild -->
+    <!-- App CSS --> 
     <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -77,19 +83,22 @@
     </header>
 
     <main>
-        <section class="news" data-parallax="scroll" data-image-src="./img/bg-cover.jpg">
+        <section class="news">
             <div class="news-container container">
                 <div class="news-inner">
                     <div class="row">
-                        <h2 class="title news-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-                        <p class="subtitle">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ullam, libero perferendis velit dolor, sequi voluptatem
-                            autem modi nobis, doloremque officiis? Dolorum alias natus autem! Aliquid commodi delectus laboriosam
-                            nostrum?
-                        </p>
-                        <a class="btn btn-news-primary" href="#">Lorem ipsum</a>
+                        <div class="col-12">
+                            <h2 class="title news-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                            <p class="subtitle">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ullam, libero perferendis velit dolor, sequi voluptatem
+                                autem modi nobis, doloremque officiis? Dolorum alias natus autem! Aliquid commodi delectus laboriosam
+                                nostrum?
+                            </p>
+                            <a class="btn btn-news-primary" href="#">Lorem ipsum</a>
+                        </div>
+                        <!-- /.col -->
                     </div>
-                    <!-- /.row -->
+                    <!-- /.row -->                    
                 </div>
                 <!-- /.news-inner -->
             </div>
@@ -226,7 +235,7 @@
                 <div class="row no-space">
                     <div class="col-6 col-sm-6 col-md-4">
                         <div class="box no-space">
-                            <a href="img/smartphone-1.jpg" title="" data-lightbox="smartphone" data-title="smartphone image 1">
+                            <a href="img/smartphone-1.jpg" title="Smartphone Image 1" data-toggle="lightbox" data-title="Smartphone Image 1" data-gallery="example-gallery" data-type="image">
                                 <img src="img/smartphone-1.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -235,7 +244,7 @@
                     <!-- /.col -->
                     <div class="col-6 col-sm-6 col-md-4">
                         <div class="box no-space">
-                            <a href="img/smartphone-2.jpg" title="" data-lightbox="smartphone" data-title="smartphone image 2">
+                            <a href="img/smartphone-2.jpg" title="Smartphone Image 2" data-toggle="lightbox" data-title="Smartphone Image 2" data-gallery="example-gallery" data-type="image">
                                 <img src="img/smartphone-2.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -244,7 +253,7 @@
                     <!-- /.col -->
                     <div class="col-6 col-sm-6 col-md-4">
                         <div class="box no-space">
-                            <a href="img/smartphone-3.jpg" title="" data-lightbox="smartphone" data-title="smartphone image 3">
+                            <a href="img/smartphone-3.jpg" title="Smartphone Image 3" data-toggle="lightbox" data-title="Smartphone Image 3" data-gallery="example-gallery" data-type="image">
                                 <img src="img/smartphone-3.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -253,7 +262,7 @@
                     <!-- /.col -->
                     <div class="col-6 col-sm-6 col-md-4">
                         <div class="box no-space">
-                            <a href="img/smartphone-4.jpg" title="" data-lightbox="smartphone" data-title="smartphone image 4">
+                            <a href="img/smartphone-4.jpg" title="Smartphone Image 4" data-toggle="lightbox" data-title="Smartphone Image 4" data-gallery="example-gallery" data-type="image">
                                 <img src="img/smartphone-4.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -262,7 +271,7 @@
                     <!-- /.col -->
                     <div class="col-6 col-sm-6 col-md-4">
                         <div class="box no-space">
-                            <a href="img/smartphone-5.jpg" title="" data-lightbox="smartphone" data-title="smartphone image 5">
+                            <a href="img/smartphone-5.jpg" title="Smartphone Image 5" data-toggle="lightbox" data-title="Smartphone Image 5" data-gallery="example-gallery" data-type="image">
                                 <img src="img/smartphone-5.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -271,7 +280,7 @@
                     <!-- /.col -->
                     <div class="col-6 col-sm-6 col-md-4">
                         <div class="box no-space">
-                            <a href="img/smartphone-6.jpg" title="" data-lightbox="smartphone" data-title="smartphone image 6">
+                            <a href="img/smartphone-6.jpg" title="Smartphone Image 6" data-toggle="lightbox" data-title="Smartphone Image 6" data-gallery="example-gallery" data-type="image">
                                 <img src="img/smartphone-6.jpg" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -292,7 +301,7 @@
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
+    <!-- Bootstrap 4 Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Parallax JS -->
@@ -309,9 +318,15 @@
     <script src="vendor/smoothscroll/SmoothScroll.js"></script>
     <!-- endbuild -->
 
+    <!-- Ekko-Lightbox JS -->    
+    <!-- build:js vendor/ekko-lightbox/ekko-lightbox.min.js -->
+    <script src="vendor/ekko-lightbox/ekko-lightbox.js"></script>
+    <!-- endbuild -->
+
     <!-- Inline Java-Scripts -->
     <script inline src="js/smoothscroll-config.js"></script>
     <script inline src="js/counterup-config.js"></script>
+    <script inline src="js/ekko-lightbox-config.js"></script>
 </body>
 
 </html>

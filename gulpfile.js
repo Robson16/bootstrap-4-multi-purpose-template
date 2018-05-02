@@ -56,6 +56,12 @@ gulp.task('copy', ['clean'], function () {
         './bower_components/smoothscroll-for-websites/SmoothScroll.js'
     ]).pipe(gulp.dest('./src/vendor/smoothscroll'));
 
+    // Ekko-Lightbox
+    gulp.src([
+        './bower_components/ekko-lightbox/dist/ekko-lightbox.css',
+        './bower_components/ekko-lightbox/dist/ekko-lightbox.js'
+    ]).pipe(gulp.dest('./src/vendor/ekko-lightbox'));
+
     return gulp.src('src/**/*').pipe(gulp.dest('dist'));
 });
 
