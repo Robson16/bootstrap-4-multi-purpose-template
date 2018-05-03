@@ -1,0 +1,35 @@
+.testimonial
+    background-color: $cor-padrao
+    min-height: 15rem
+    height: auto
+    color: $cor-branca
+
+    @extend %text-shadow
+
+.slider
+
+.slider-item
+    .col-left
+        width: 25%
+        float: left
+
+        img
+            margin-bottom: 15px
+
+    .col-right
+        width: 75%
+        float: right
+
+        p
+            margin: 0 auto
+            display: inline-block
+            vertical-align: middle
+            line-height: 30px
+            font-style: italic
+    
+    @media screen and (max-width: 768px)
+        .col-left
+            width: 100%
+
+        .col-right
+            width: 100%

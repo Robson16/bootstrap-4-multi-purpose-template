@@ -60,7 +60,14 @@ gulp.task('copy', ['clean'], function () {
     gulp.src([
         './bower_components/ekko-lightbox/dist/ekko-lightbox.css',
         './bower_components/ekko-lightbox/dist/ekko-lightbox.js'
-    ]).pipe(gulp.dest('./src/vendor/ekko-lightbox'));
+    ]).pipe(gulp.dest('./src/vendor/ekko-lightbox'));   
+
+    // Slick-Carousel
+    gulp.src([
+        './bower_components/slick-carousel/slick/**/*',
+        '!./bower_components/slick-carousel/slick/.*',
+        '!./bower_components/slick-carousel/slick/*.{txt,json,md,rb,less,scss}'
+    ]).pipe(gulp.dest('./src/vendor/slick-carousel'));  
 
     return gulp.src('src/**/*').pipe(gulp.dest('dist'));
 });

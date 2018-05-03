@@ -1,7 +1,6 @@
 .countup
     background: rgba($cor-padrao, 0.2)
     padding-top: 1px
-    min-height: 500px
     height: auto
     color: $cor-branca
 
@@ -9,14 +8,22 @@
 
 .container
     height: 100%
-    min-height: 50vmin
+    min-height: 40vmin
+    padding-bottom: 3em
 
 .item
-    padding: 1em auto
+    padding: 0.25em auto
 
     .item-icon
-        @extend %padding-default
         font-size: 1.5em
 
-    .counter
-        font-size: 2em
+    .item-count
+        padding: 0.2em 0
+        font-size: 3em
+
+    .item-text
+        font-size: 1.2em
+
+    @media screen and (max-width: 768px)
+        margin-top: 15px
+        margin-bottom: 15px

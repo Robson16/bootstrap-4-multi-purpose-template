@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap Landing Page Template</title>
+    
     <!-- Bootstrap 4 Core CSS --> 
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
     <!-- Font Awesome 4 CSS --> 
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+
     <!-- Ekko-Lightbox CSS -->    
     <!-- build:css vendor/ekko-lightbox/ekko-lightbox.min.css -->
     <link rel="stylesheet" href="vendor/ekko-lightbox/ekko-lightbox.css">
     <!-- endbuild -->
+
+    <!-- Slick Carousel -->
+    <!-- build:css vendor/slick-carousel/slick.min.css -->
+    <link rel="stylesheet" href="vendor/slick-carousel/slick.css">
+    <link rel="stylesheet" href="vendor/slick-carousel/slick-theme.css">
+    <!-- endbuild -->
+
     <!-- App CSS --> 
     <link rel="stylesheet" href="css/app.css">
 </head>
@@ -88,7 +98,7 @@
                 <div class="news-inner">
                     <div class="row">
                         <div class="col-12">
-                            <h2 class="title news-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                            <h1 class="title news-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
                             <p class="subtitle">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ullam, libero perferendis velit dolor, sequi voluptatem
                                 autem modi nobis, doloremque officiis? Dolorum alias natus autem! Aliquid commodi delectus laboriosam
@@ -105,7 +115,7 @@
             <!-- /.news-container -->
         </section>
 
-        <section class="products padding-bottom">
+        <section class="products">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12">
@@ -161,15 +171,17 @@
                 <!-- /.row -->                
             </div>
             <!-- /.container -->
-        </section>             
+        </section>
 
         <section class="countup" data-parallax="scroll" data-image-src="./img/people-using-smartphones.jpg">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-12">
                         <div class="title-block">
-                            <h2 class="title">Lorem ipsum dolor sit amet</h2>
-                            <p class="subtitle">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                            <h2 class="title">Lorem ipsum</h2>
+                            <h3 class="subtitle">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos impedit quae amet placeat.
+                            </h3>
                         </div>
                         <!-- /.title-block -->
                     </div>
@@ -182,9 +194,12 @@
                             <div class="item-icon">
                                 <i class="fa fa-flag fa-3x"></i>
                             </div>
-                            <h3 class="item-text">
-                                <p>Lorem ipsum<br><span class="counter">36.240</span><br> dolor sit</p>
-                            </h3>
+                            <div class="item-count">
+                                <span class="counter">36</span>K
+                            </div>
+                            <div class="item-text text-uppercase">
+                                Lorem ipsum
+                            </div>
                         </div>
                         <!-- /.item -->
                     </div>
@@ -194,9 +209,12 @@
                             <div class="item-icon">
                                 <i class="fa fa-calendar-o fa-3x"></i>
                             </div>
-                            <h3 class="item-text">
-                                <p>Lorem ipsum<br><span class="counter">6.240</span><br>dolor sit</p>
-                            </h3>
+                            <div class="item-count">
+                                <span class="counter">365</span>
+                            </div>
+                            <div class="item-text text-uppercase">
+                                Lorem ipsum
+                            </div>
                         </div>
                         <!-- /.item -->
                     </div>
@@ -206,9 +224,12 @@
                             <div class="item-icon">
                                 <i class="fa fa-clock-o fa-3x"></i>
                             </div>
-                            <h3 class="item-text">
-                                <p>Lorem ipsum<br><span class="counter">14</span><br>dolor sit</p>
-                            </h3>
+                            <div class="item-count">
+                                <span class="counter">24</span>
+                            </div>
+                            <div class="item-text text-uppercase">
+                                Lorem ipsum
+                            </div>
                         </div>
                         <!-- /.item -->
                     </div>
@@ -224,8 +245,8 @@
                 <div class="row">
                     <div class="col-12 ">
                         <div class="title-block">
-                            <h2 class="title color-primary">Lorem ipsum dolor</h2>
-                            <p class="subtitle color-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h2 class="title color-primary">Lorem ipsum</h2>
+                            <h3 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
                         </div>
                         <!-- /.title-block -->
                     </div>
@@ -233,7 +254,7 @@
                 </div>
                 <!-- /.row -->            
                 <div class="row no-space">
-                    <div class="col-6 col-sm-6 col-md-4">
+                    <div class="col-6 col-sm-6 col-md-3">
                         <div class="box no-space">
                             <a href="img/smartphone-1.jpg" title="Smartphone Image 1" data-toggle="lightbox" data-title="Smartphone Image 1" data-gallery="example-gallery" data-type="image">
                                 <img src="img/smartphone-1.jpg" alt="" class="img-fluid">
@@ -242,7 +263,7 @@
                         <!-- /.box -->
                     </div>
                     <!-- /.col -->
-                    <div class="col-6 col-sm-6 col-md-4">
+                    <div class="col-6 col-sm-6 col-md-3">
                         <div class="box no-space">
                             <a href="img/smartphone-2.jpg" title="Smartphone Image 2" data-toggle="lightbox" data-title="Smartphone Image 2" data-gallery="example-gallery" data-type="image">
                                 <img src="img/smartphone-2.jpg" alt="" class="img-fluid">
@@ -251,7 +272,7 @@
                         <!-- /.box -->
                     </div>
                     <!-- /.col -->
-                    <div class="col-6 col-sm-6 col-md-4">
+                    <div class="col-6 col-sm-6 col-md-3">
                         <div class="box no-space">
                             <a href="img/smartphone-3.jpg" title="Smartphone Image 3" data-toggle="lightbox" data-title="Smartphone Image 3" data-gallery="example-gallery" data-type="image">
                                 <img src="img/smartphone-3.jpg" alt="" class="img-fluid">
@@ -260,7 +281,7 @@
                         <!-- /.box -->
                     </div>
                     <!-- /.col -->
-                    <div class="col-6 col-sm-6 col-md-4">
+                    <div class="col-6 col-sm-6 col-md-3">
                         <div class="box no-space">
                             <a href="img/smartphone-4.jpg" title="Smartphone Image 4" data-toggle="lightbox" data-title="Smartphone Image 4" data-gallery="example-gallery" data-type="image">
                                 <img src="img/smartphone-4.jpg" alt="" class="img-fluid">
@@ -269,7 +290,7 @@
                         <!-- /.box -->
                     </div>
                     <!-- /.col -->
-                    <div class="col-6 col-sm-6 col-md-4">
+                    <div class="col-6 col-sm-6 col-md-3">
                         <div class="box no-space">
                             <a href="img/smartphone-5.jpg" title="Smartphone Image 5" data-toggle="lightbox" data-title="Smartphone Image 5" data-gallery="example-gallery" data-type="image">
                                 <img src="img/smartphone-5.jpg" alt="" class="img-fluid">
@@ -278,7 +299,7 @@
                         <!-- /.box -->
                     </div>
                     <!-- /.col -->
-                    <div class="col-6 col-sm-6 col-md-4">
+                    <div class="col-6 col-sm-6 col-md-3">
                         <div class="box no-space">
                             <a href="img/smartphone-6.jpg" title="Smartphone Image 6" data-toggle="lightbox" data-title="Smartphone Image 6" data-gallery="example-gallery" data-type="image">
                                 <img src="img/smartphone-6.jpg" alt="" class="img-fluid">
@@ -286,12 +307,90 @@
                         </div>
                         <!-- /.box -->
                     </div>
-                    <!-- /.col -->                    
+                    <!-- /.col -->
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="box no-space">
+                            <a href="img/smartphone-7.jpg" title="Smartphone Image 7" data-toggle="lightbox" data-title="Smartphone Image 7" data-gallery="example-gallery" data-type="image">
+                                <img src="img/smartphone-7.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="box no-space">
+                            <a href="img/smartphone-8.jpg" title="Smartphone Image 8" data-toggle="lightbox" data-title="Smartphone Image 8" data-gallery="example-gallery" data-type="image">
+                                <img src="img/smartphone-8.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->                                        
                 </div>
                 <!-- /.row -->
             </div>
             <!-- /.container-fluid -->
-        </section> 
+        </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <div class="col-12">
+                    <div class="row">        
+                        <div class="title-block">
+                            <h2 class="title">Lorem ipsum</h2>
+                            <h3 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </div>
+                        <!-- /.title-block -->        
+                    </div>
+                    <div class="slider">
+                        <div class="slider-item">
+                            <div class="col-left">
+                                <img class="img-fluid img-thumbnail rounded-circle mx-auto" src="img/john-doe.jpg" alt="Client">
+                                <h4>John Doe</h4>
+                            </div>
+                            <div class="col-right">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos impedit quae amet placeat nobis doloribus,
+                                    perferendis earum quidem beatae. Quos molestias non vel accusamus sit labore nemo dolorem illo.
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="slider-item">
+                            <div class="col-left">
+                                <img class="img-fluid img-thumbnail rounded-circle mx-auto" src="img/john-doe.jpg" alt="Client">
+                                <h4>John Doe</h4>
+                            </div>
+                            <div class="col-right">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos impedit quae amet placeat nobis doloribus,
+                                    perferendis earum quidem beatae. Quos molestias non vel accusamus sit labore nemo dolorem illo.
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos impedit quae
+                                    amet placeat nobis doloribus, perferendis earum quidem beatae. Quos molestias non vel accusamus
+                                    sit labore nemo dolorem illo.
+                                </p>
+                            </div>
+                        </div>
+        
+                        <div class="slider-item">
+                            <div class="col-left">
+                                <img class="img-fluid img-thumbnail rounded-circle mx-auto" src="img/john-doe.jpg" alt="Client">
+                                <h4>John Doe</h4>
+                            </div>
+                            <div class="col-right">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem dignissimos impedit quae amet placeat nobis doloribus.
+                                    Quos molestias non vel accusamus sit labore nemo dolorem illo. Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Voluptatem dignissimos impedit quae amet placeat nobis doloribus, perferendis
+                                    earum quidem beatae.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col -->
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -323,10 +422,14 @@
     <script src="vendor/ekko-lightbox/ekko-lightbox.js"></script>
     <!-- endbuild -->
 
+    <!-- Slick Carousel -->
+    <script src="vendor/slick-carousel/slick.min.js"></script>
+
     <!-- Inline Java-Scripts -->
     <script inline src="js/smoothscroll-config.js"></script>
     <script inline src="js/counterup-config.js"></script>
     <script inline src="js/ekko-lightbox-config.js"></script>
+    <script inline src="js/slick-carousel-config.js"></script>
 </body>
 
 </html>

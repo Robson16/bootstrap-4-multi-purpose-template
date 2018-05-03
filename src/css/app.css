@@ -34,14 +34,11 @@ body {
 .btn-cover-primary, .card .card-body .btn-primary, .card {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
-.title, .subtitle, .news, .countup {
+.title, .subtitle, .news, .countup, .testimonial {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
 
 .btn {
   margin: 1.5em 0; }
-
-.item .item-icon {
-  padding: 1.5em 0; }
 
 /* BASE STYLES */
 body,
@@ -66,9 +63,6 @@ h6 {
 .color-primary {
   color: #1e7aea; }
 
-.padding-bottom {
-  padding-bottom: 3em; }
-
 .no-space {
   margin-left: -15px;
   margin-right: -15px;
@@ -85,7 +79,7 @@ h6 {
   line-height: 1.4167 !important; }
 
 .title-block, .cover-title {
-  margin: 2em 0; }
+  margin: 2em auto; }
 
 /* LAYOUTS */
 .navbar-trans {
@@ -169,7 +163,8 @@ h6 {
 .products {
   background-color: #f4f4f4;
   min-height: 38rem;
-  height: auto; }
+  height: auto;
+  padding-bottom: 3em; }
 
 .card .card-body .card-text {
   min-height: 146px; }
@@ -186,20 +181,55 @@ h6 {
 .countup {
   background: rgba(30, 122, 234, 0.2);
   padding-top: 1px;
-  min-height: 500px;
   height: auto;
   color: white; }
 
 .container {
   height: 100%;
-  min-height: 50vmin; }
+  min-height: 40vmin;
+  padding-bottom: 3em; }
 
 .item {
-  padding: 1em auto; }
+  padding: 0.25em auto; }
   .item .item-icon {
     font-size: 1.5em; }
-  .item .counter {
-    font-size: 2em; }
+  .item .item-count {
+    padding: 0.2em 0;
+    font-size: 3em; }
+  .item .item-text {
+    font-size: 1.2em; }
+  @media screen and (max-width: 768px) {
+    .item {
+      margin-top: 15px;
+      margin-bottom: 15px; } }
+
+.testimonial {
+  background-color: #1e7aea;
+  min-height: 15rem;
+  height: auto;
+  color: white; }
+
+.slider-item .col-left {
+  width: 25%;
+  float: left; }
+  .slider-item .col-left img {
+    margin-bottom: 15px; }
+
+.slider-item .col-right {
+  width: 75%;
+  float: right; }
+  .slider-item .col-right p {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 30px;
+    font-style: italic; }
+
+@media screen and (max-width: 768px) {
+  .slider-item .col-left {
+    width: 100%; }
+  .slider-item .col-right {
+    width: 100%; } }
 
 footer {
   background: url("../img/patterns/zwartevilt.png") repeat;
