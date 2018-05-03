@@ -31,10 +31,10 @@ body {
   -o-background-size: cover;
   background-size: cover; }
 
-.btn-cover-primary, .card .card-body .btn-primary, .card {
+.btn-cover-primary, .services {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
-.title, .subtitle, .news, .countup, .testimonial {
+.title, .subtitle, .news, .testimonial, .countup {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
 
 .btn {
@@ -103,7 +103,7 @@ h6 {
   text-transform: uppercase;
   color: white; }
 
-.btn-cover-primary, .card .card-body .btn-primary {
+.btn-cover-primary {
   padding: 0.5em 2em;
   border-color: transparent;
   border-radius: 0.15em;
@@ -111,7 +111,7 @@ h6 {
   font-size: 1.2em;
   font-weight: bold;
   line-height: 3em; }
-  .btn-cover-primary:hover, .card .card-body .btn-primary:hover {
+  .btn-cover-primary:hover {
     color: white;
     background-color: #1262c3; }
 
@@ -160,23 +160,26 @@ h6 {
       .news-inner .btn-news-primary {
         margin: 0 auto; } }
 
-.products {
+.services {
   background-color: #f4f4f4;
-  min-height: 38rem;
+  height: auto; }
+  .services i, .services h4, .services p {
+    padding: 5px 0; }
+
+.testimonial {
+  background-color: #1e7aea;
+  min-height: 15rem;
   height: auto;
-  padding-bottom: 3em; }
+  color: white; }
 
-.card .card-body .card-text {
-  min-height: 146px; }
+.owl-carousel img {
+  margin-bottom: 15px;
+  max-width: 150px;
+  max-height: 150px; }
 
-.card .card-body .btn-primary {
-  font-size: 1em;
-  line-height: 1.2em; }
-
-@media screen and (max-width: 736px) {
-  .card {
-    margin-top: 15px;
-    margin-bottom: 15px; } }
+.owl-carousel p {
+  font-style: italic;
+  line-height: 30px; }
 
 .countup {
   background: rgba(30, 122, 234, 0.2);
@@ -202,21 +205,6 @@ h6 {
     .item {
       margin-top: 15px;
       margin-bottom: 15px; } }
-
-.testimonial {
-  background-color: #1e7aea;
-  min-height: 15rem;
-  height: auto;
-  color: white; }
-
-.owl-carousel img {
-  margin-bottom: 15px;
-  max-width: 150px;
-  max-height: 150px; }
-
-.owl-carousel p {
-  font-style: italic;
-  line-height: 30px; }
 
 footer {
   background: url("../img/patterns/zwartevilt.png") repeat;
