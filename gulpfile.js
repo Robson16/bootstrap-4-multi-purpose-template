@@ -46,6 +46,11 @@ gulp.task('copy', ['clean'], function () {
         './bower_components/waypoints/lib/jquery.waypoints.min.js'
     ]).pipe(gulp.dest('./src/vendor/waypoints'));
 
+    // Parallax JS
+    gulp.src([
+        './bower_components/parallax.js/parallax.min.js'
+    ]).pipe(gulp.dest('./src/vendor/parallax'));
+
     // Counter-Up JS
     gulp.src([
         './bower_components/Counter-Up/jquery.counterup.min.js'
@@ -60,14 +65,15 @@ gulp.task('copy', ['clean'], function () {
     gulp.src([
         './bower_components/ekko-lightbox/dist/ekko-lightbox.css',
         './bower_components/ekko-lightbox/dist/ekko-lightbox.js'
-    ]).pipe(gulp.dest('./src/vendor/ekko-lightbox'));   
+    ]).pipe(gulp.dest('./src/vendor/ekko-lightbox'));
 
-    // Slick-Carousel
+    // Owl-Carousel
     gulp.src([
-        './bower_components/slick-carousel/slick/**/*',
-        '!./bower_components/slick-carousel/slick/.*',
-        '!./bower_components/slick-carousel/slick/*.{txt,json,md,rb,less,scss}'
-    ]).pipe(gulp.dest('./src/vendor/slick-carousel'));  
+        './bower_components/owl.carousel/dist/assets/ajax-loader.gif',
+        './bower_components/owl.carousel/dist/assets/owl.carousel.min.css',
+        './bower_components/owl.carousel/dist/assets/owl.theme.default.min.css',
+        './bower_components/owl.carousel/dist/owl.carousel.min.js',
+    ]).pipe(gulp.dest('./src/vendor/owl.carousel'));
 
     return gulp.src('src/**/*').pipe(gulp.dest('dist'));
 });

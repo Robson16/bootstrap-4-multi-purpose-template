@@ -209,27 +209,14 @@ h6 {
   height: auto;
   color: white; }
 
-.slider-item .col-left {
-  width: 25%;
-  float: left; }
-  .slider-item .col-left img {
-    margin-bottom: 15px; }
+.owl-carousel img {
+  margin-bottom: 15px;
+  max-width: 150px;
+  max-height: 150px; }
 
-.slider-item .col-right {
-  width: 75%;
-  float: right; }
-  .slider-item .col-right p {
-    margin: 0 auto;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 30px;
-    font-style: italic; }
-
-@media screen and (max-width: 768px) {
-  .slider-item .col-left {
-    width: 100%; }
-  .slider-item .col-right {
-    width: 100%; } }
+.owl-carousel p {
+  font-style: italic;
+  line-height: 30px; }
 
 footer {
   background: url("../img/patterns/zwartevilt.png") repeat;
