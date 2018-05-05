@@ -1,0 +1,46 @@
+.video
+    @extend .countup
+
+    .btn-video
+        background: rgba(255, 255, 255, 0)
+        min-width: 125px
+        min-height: 125px
+        border-radius: 50%
+        border: 5px solid $cor-padrao
+        transition: all 0.2s linear;
+
+        i
+            padding-left: 15px
+            color: $cor-padrao
+            transition: all 0.2s linear;
+
+        &:hover
+            border-color: darken($cor-padrao, 20%)
+
+            i
+                color: darken($cor-padrao, 20%)
+
+.modal-dialog
+    max-width: 800px
+    min-height: calc(100vh - 60px)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    overflow: hidden
+
+    @media(max-width: 768px)
+        min-height: calc(100vh - 20px)
+
+.modal-body
+    position: relative
+    padding: 0px
+
+.close
+    position: absolute
+    right: -30px
+    top: 0
+    z-index: 999
+    font-size: 2rem
+    font-weight: normal
+    color: #fff
+    opacity: 1
