@@ -57,6 +57,11 @@ h5,
 h6 {
   text-align: center; }
 
+.container {
+  height: 100%;
+  min-height: 40vmin;
+  padding-bottom: 3em; }
+
 .hidden {
   display: none; }
 
@@ -232,25 +237,18 @@ h6 {
   min-height: 15rem;
   height: auto;
   color: white; }
-
-.owl-carousel img {
-  margin-bottom: 15px;
-  max-width: 150px;
-  max-height: 150px; }
-
-.owl-carousel p {
-  font-style: italic;
-  line-height: 30px; }
+  .testimonial .testimonial-carousel img {
+    margin-bottom: 15px;
+    max-width: 150px;
+    max-height: 150px; }
+  .testimonial .testimonial-carousel p {
+    font-style: italic;
+    line-height: 30px; }
 
 .countup, .video {
   background: rgba(30, 122, 234, 0.2);
   height: auto;
   color: white; }
-
-.container {
-  height: 100%;
-  min-height: 40vmin;
-  padding-bottom: 3em; }
 
 .item {
   padding: 0.25em auto; }
@@ -265,6 +263,9 @@ h6 {
     .item {
       margin-top: 15px;
       margin-bottom: 15px; } }
+
+.gallery {
+  height: auto; }
 
 .video .btn-video {
   background: rgba(255, 255, 255, 0);
@@ -306,6 +307,11 @@ h6 {
   font-weight: normal;
   color: #fff;
   opacity: 1; }
+
+.blog {
+  height: auto; }
+  .blog .card {
+    width: 18rem; }
 
 footer {
   background: url("../img/patterns/zwartevilt.png") repeat;
