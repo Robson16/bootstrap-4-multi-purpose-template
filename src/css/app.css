@@ -83,6 +83,11 @@ h6 {
 .title-block, .cover-title {
   margin: 2em auto; }
 
+.btn {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: white; }
+
 .btn-primary {
   padding: 0.5em 2em;
   border-color: transparent;
@@ -124,11 +129,6 @@ h6 {
 .cover-container {
   height: 100%;
   min-height: 40rem; }
-
-.btn {
-  box-sizing: border-box;
-  text-transform: uppercase;
-  color: white; }
 
 .cover-link {
   text-decoration: underline;
@@ -313,6 +313,15 @@ h6 {
 .calltoaction {
   background: #1e7aea;
   color: white; }
+
+.faq .card-header {
+  background: #1e7aea; }
+  .faq .card-header:hover {
+    background: #1262c3; }
+
+.faq .btn-link:hover {
+  color: white;
+  text-decoration: none; }
 
 footer {
   background: url("../img/patterns/zwartevilt.png") repeat;
