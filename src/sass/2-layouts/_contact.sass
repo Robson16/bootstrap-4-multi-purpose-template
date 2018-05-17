@@ -1,0 +1,75 @@
+.contact
+    @extend .countup
+
+    .contact-info a
+        text-decoration: none
+        color: $cor-branca
+
+        &:hover, &:focus, &:active
+            color: $cor-padrao
+
+    .social
+        text-align: left
+        margin-top: 40px
+
+        a
+            margin: 0 10px 0 0
+            color: $cor-branca
+            display: inline-block
+            width: 40px
+            height: 40px
+            border-radius: 20px
+            line-height: 40px
+            font-size: 13px
+            text-align: center
+            -webkit-transition: all 0.2s ease-out
+            -moz-transition: all 0.2s ease-out
+            transition: all 0.2s ease-out
+            vertical-align: bottom
+            border: solid 1px $cor-branca
+
+            i
+                vertical-align: bottom
+                line-height: 40px
+
+            &:hover
+                background: transparent
+
+                &.facebook
+                    color: #4460ae
+                    border-color: #4460ae
+
+                &.gplus
+                    color: #c21f25
+                    border-color: #c21f25
+
+                &.twitter
+                    color: #3cf
+                    border-color: #3cf
+
+                &.instagram
+                    color: #cd4378
+                    border-color: #cd4378
+
+                &.email
+                    color: #4a7f45
+                    border-color: #4a7f45
+
+                &.link
+                    color: #871AFF
+                    border-color: #871AFF
+
+    @media (min-width: 768px)
+        input, textarea
+            background: rgba($cor-branca, 0.5)
+            color: $cor-auxiliar
+            border: none
+            border-radius: 0
+
+            &:focus, &:active
+                background: rgba($cor-branca, 0.8)
+                box-shadow: none
+
+            &::placeholder
+                color: $cor-branca
+                font-weight: bold

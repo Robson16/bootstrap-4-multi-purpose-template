@@ -34,7 +34,7 @@ body {
 .btn-primary, .services {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
-.title, .subtitle, .news, .testimonial, .countup, .video {
+.title, .subtitle, .news, .testimonial, .countup, .video, .contact {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
 
 /* BASE STYLES */
@@ -53,6 +53,9 @@ h4,
 h5,
 h6 {
   text-align: center; }
+
+textarea {
+  resize: none; }
 
 .container {
   height: 100%;
@@ -109,9 +112,9 @@ h6 {
   font-size: 1em;
   line-height: 2.6em; }
   .btn-outline-light:hover {
-    opacity: 0.7;
-    color: black;
-    background-color: white; }
+    background: rgba(255, 255, 255, 0.6);
+    color: white;
+    font-weight: bold; }
 
 /* LAYOUTS */
 .navbar-trans {
@@ -242,7 +245,7 @@ h6 {
     font-style: italic;
     line-height: 30px; }
 
-.countup, .video {
+.countup, .video, .contact {
   background: rgba(30, 122, 234, 0.2);
   height: auto;
   color: white; }
@@ -322,6 +325,67 @@ h6 {
 .faq .btn-link:hover {
   color: white;
   text-decoration: none; }
+
+.contact .contact-info a {
+  text-decoration: none;
+  color: white; }
+  .contact .contact-info a:hover, .contact .contact-info a:focus, .contact .contact-info a:active {
+    color: #1e7aea; }
+
+.contact .social {
+  text-align: left;
+  margin-top: 40px; }
+  .contact .social a {
+    margin: 0 10px 0 0;
+    color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    font-size: 13px;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    vertical-align: bottom;
+    border: solid 1px white; }
+    .contact .social a i {
+      vertical-align: bottom;
+      line-height: 40px; }
+    .contact .social a:hover {
+      background: transparent; }
+      .contact .social a:hover.facebook {
+        color: #4460ae;
+        border-color: #4460ae; }
+      .contact .social a:hover.gplus {
+        color: #c21f25;
+        border-color: #c21f25; }
+      .contact .social a:hover.twitter {
+        color: #3cf;
+        border-color: #3cf; }
+      .contact .social a:hover.instagram {
+        color: #cd4378;
+        border-color: #cd4378; }
+      .contact .social a:hover.email {
+        color: #4a7f45;
+        border-color: #4a7f45; }
+      .contact .social a:hover.link {
+        color: #871AFF;
+        border-color: #871AFF; }
+
+@media (min-width: 768px) {
+  .contact input, .contact textarea {
+    background: rgba(255, 255, 255, 0.5);
+    color: #11101a;
+    border: none;
+    border-radius: 0; }
+    .contact input:focus, .contact input:active, .contact textarea:focus, .contact textarea:active {
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: none; }
+    .contact input::placeholder, .contact textarea::placeholder {
+      color: white;
+      font-weight: bold; } }
 
 footer {
   background: url("../img/patterns/zwartevilt.png") repeat;
