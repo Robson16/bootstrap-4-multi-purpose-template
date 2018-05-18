@@ -45,7 +45,7 @@ It will call the default task of the gulp script, which will create the folder r
 
 Feel free to contribute, this is not the best project in the world, there is always something to improve, I count on everyone to do it!
 
-=====================================================================================================================================
+=========================================================================
 
 # Bootstrap Landing Page Template
 
@@ -92,4 +92,4 @@ Ele ira fazer a chamada da tarefa padrão do sript gulp, que montara a pasta pro
 
 ## Contribuição
 
-Fiquem a vontade para comtribuir, esse não é projeto mais bem feito do mundo, sempre tem o que melhorar, conto com todos para isso!
+Fiquem a vontade para contribuir, esse não é projeto mais bem feito do mundo, sempre tem o que melhorar, conto com todos para isso!
