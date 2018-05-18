@@ -4,7 +4,7 @@
 
 - Node.js
 - Gulp
-Bower
+- Bower
 
 Node.js is used to use Gulp for task automation (SASS Compiler, image optimizer, image minification, etc.) and Bower for dependency manager (Jquery, Bootstrap, etc.).
 
