@@ -6,6 +6,7 @@ html
 body
     @extend %body-font
 
+    color: $cor-auxiliar
     overflow-x: hidden
 
 h1,
@@ -20,11 +21,6 @@ h6
 
 textarea
     resize: none
-
-.container
-    height: 100%
-    min-height: 40vmin
-    padding-bottom: 3em
 
 .hidden
     display: none
@@ -87,3 +83,11 @@ textarea
         background: rgba($cor-branca, 0.6)
         color: $cor-branca
         font-weight: bold
+
+.btn-outline-primary
+    border-color: $cor-padrao
+    color: $cor-padrao
+
+    &:hover
+        background: $cor-padrao
+        color: $cor-branca
