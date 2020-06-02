@@ -563,3 +563,8 @@ footer {
   height: auto;
   min-height: 50vmin;
 }
+
+/*Form's Opacity*/
+.form-group {
+  opacity: 200%;
+}
